@@ -1,10 +1,9 @@
-const express = require("express") 
-const bodyParser = require('body-parser') 
+const express = require("express");
 
-const app = express() 
+const app = express();
 
-app.use(bodyParser.urlencoded({ extended: false })) 
-app.use(bodyParser.json())
+app.use(express.urlencoded({ extend: false }));
+app.use(express.json());
 
 const defaultResponse = {
     msg: '[Default message] Everything work here'
